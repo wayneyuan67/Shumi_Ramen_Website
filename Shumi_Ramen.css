@@ -9,7 +9,28 @@ body {
 
 header {
     width: 80%;
-    height: 100px;
+    height: 300px;
     background-color: #3E3A3A;
-    
+    margin: auto;
+    text-align: center;
 }
+
+h1{
+	font-size: 16px;
+	font-weight: lighter;
+	margin-bottom: 30px;
+	margin-top: -25px;
+	padding: 0;
+	color: white;
+}
+
+nav{
+	background-color: yellow;
+}
+
+.logo {
+	margin-top: 20px;
+}
+
+
+
