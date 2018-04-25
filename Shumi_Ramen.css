@@ -6,3 +6,10 @@ body {
   margin: 0;
   font-family: Oswald, sans-serif;
 }
+
+header {
+    width: 80%;
+    height: 100px;
+    background-color: #3E3A3A;
+    
+}
