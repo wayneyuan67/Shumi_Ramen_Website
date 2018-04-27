@@ -60,7 +60,7 @@ nav{
 }
 
 @media screen and (max-width: 800px) {
-  .topnav a:not(:last-child) {display: none;}
+  .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     display: block;
   }
