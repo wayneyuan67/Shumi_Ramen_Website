@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shumi Ramen</title>
+	<link rel="stylesheet" href="css/Shumi_Ramen.css" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header >
+		<img class="logo" src="assets/shumi-ramen-logo.png" alt="Shumi Ramen Logo" height="200" width="200">
+
+		<h1>low salt, lean meat</h1>
+
+		<nav class="topnav" id="myTopnav"> 
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		  	<a class="active" href="#home">Home</a>
+		  	<a class="active" href="#news">Menu</a>
+		  	<a class="active" href="#contact">Our Story</a>
+		 	 <a class="active" href="#about">Contact</a>
+		 
+		</nav>
+
+		<div class="quote"></div>
+
+	</header>
+
+	
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+	</script>
+</body>
+</html>
