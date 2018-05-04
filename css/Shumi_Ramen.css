@@ -3,9 +3,14 @@
 }
 
 body {
+  background-image: url("Background_Image.jpg");
   margin: 0;
   font-family: Oswald, sans-serif;
 }
+
+.clearfix{
+        clear: both;
+      }
 
 header {
     width: 80%;
@@ -24,6 +29,7 @@ h1{
 	color: white;
 }
 
+/******************Navgation Bar*****************/
 nav{
 	margin: auto;
 	width: 100%;
@@ -40,7 +46,7 @@ nav{
 
 .topnav a {
 	text-align: center;
-  	color: #f2f2f2;
+  color: #f2f2f2;
 	padding: 25px 50px;
 	text-decoration: none;
 	font-size: 18px;
@@ -67,7 +73,7 @@ nav{
 }
 
 @media screen and (max-width: 800px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: static;}
   .topnav.responsive .icon {
     position: static;
   }
@@ -77,10 +83,60 @@ nav{
     margin: auto;
   }
 }
+/****************Ramen Icon & Quote*******************/
 
-.quote{
-	margin: auto;
-	background-color: red;
+.ramen_icon{
+  margin-top: 20px;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.icon_text{
+  font-size: 17px;
+  font-style: italic;
+  margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .icon_text {font-size: 12px}
+}
+
+/****************Slide Show****************/
+
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow_container {
+  width: 80%;
+  position: static;
+  margin: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
