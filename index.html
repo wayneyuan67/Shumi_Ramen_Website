@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Shumi Ramen</title>
+	<title>Shumi_Ramen</title>
 	<link rel="stylesheet" href="css/Shumi_Ramen.css" />
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header >
-		<img class="logo" src="assets/shumi-ramen-logo.png" alt="Shumi Ramen Logo" height="200" width="200">
+		<img class="logo" src="assets/Shumi_Ramen_Logo.png" alt="Shumi Ramen Logo" height="200" width="200">
 
 		<h1>low salt, lean meat</h1>
 
+	<!--***************** Nav Bar ******************-->
 		<nav class="topnav" id="myTopnav"> 
 			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		  	<a class="active" href="#home">Home</a>
 		  	<a class="active" href="#news">Menu</a>
 		  	<a class="active" href="#contact">Our Story</a>
 		 	 <a class="active" href="#about">Contact</a>
-		 
 		</nav>
-
-		<div class="quote"></div>
-
 	</header>
+
+	<!--***************** Ramen icon & Quote ******************-->
+	<div class="ramen_icon">
+		<h2 class="icon_text">
+			<img src="assets/Ramen_Icon.jpg" alt="Ramen Icon" height="50" width="50">
+			“Man shall not live by bread alone…”
+		</h2>
+	</div>
+
+	<!--***************** Slide-shows ******************-->
+	<br>
+	<div class="slideshow_container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="assets/Information.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="assets/Ramen/Vegeterian_Shoyu_Ramen.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="assets/Appetizer/Takoyaki.jpg" style="width:100%">
+		</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
 
 	
 	<script>
+	//----------------------------------------------------Hamburger-button
 	function myFunction() {
 	    var x = document.getElementById("myTopnav");
 	    if (x.className === "topnav") {
@@ -34,6 +68,36 @@
 	    } else {
 	        x.className = "topnav";
 	    }
+	}
+
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+	</script>
+
+	<script>
+	//----------------------------------------------------Slide-Show
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex > slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 3000); // Change image every 2 seconds
 	}
 	</script>
 </body>
