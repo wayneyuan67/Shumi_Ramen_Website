@@ -29,7 +29,11 @@ h1{
 	color: white;
 }
 
-/******************Navgation Bar*****************/
+h2{
+
+}
+
+/******************---Navgation Bar---*****************/
 nav{
 	margin: auto;
 	width: 100%;
@@ -37,8 +41,17 @@ nav{
 	list-style:none;
 }
 
+.sticky {
+  clear: both;
+  position: fixed;
+  top: 0;
+  width: 50%;
+  padding-top: 10px;
+  background-color: yellow;
+}
+
 .topnav {
-  	overflow: hidden;
+  overflow: hidden;
  	background-color: #781214;
  	display: inline-block;
  	float: left;
@@ -83,7 +96,7 @@ nav{
     margin: auto;
   }
 }
-/****************Ramen Icon & Quote*******************/
+/****************---Ramen Icon & Quote---*******************/
 
 .ramen_icon{
   margin-top: 20px;
@@ -102,7 +115,7 @@ nav{
   .icon_text {font-size: 12px}
 }
 
-/****************Slide Show****************/
+/****************---Slide Show---****************/
 
 .mySlides {display: none;}
 
@@ -139,6 +152,41 @@ nav{
   to {opacity: 1}
 }
 
+/****************---Menu---****************/
+
+.accordion {
+    background-color: tomato;
+    color: pink;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin: auto;
+    font-family: Oswald, sans-serif; 
+}
+
+.active_button, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: yellow;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.menu_pictures{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
 
 
 
