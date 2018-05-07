@@ -28,7 +28,7 @@
     transition: max-height 0.2s ease-out;
 }
 
-img{
+.menu_pictures{
   display:block;
   margin-left: auto;
   margin-right: auto;
@@ -60,13 +60,13 @@ p{
 
 <button class="accordion">Section 2</button>
 <div class="panel">
-    <img src="images/dog2.jpg">
+    <img class="menu_pictures" src="images/dog2.jpg">
     <p>HI</p>
 </div>
 
 <button class="accordion">Section 3</button>
 <div class="panel">
-    <img src="images/dog3.jpeg">
+    <img class="menu_pictures" src="images/dog3.jpeg">
     <p>HI</p>  
 </div>
 
@@ -76,7 +76,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("active_button");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
