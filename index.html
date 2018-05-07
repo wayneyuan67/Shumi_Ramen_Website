@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Shumi_Ramen</title>
+	<title>Testing</title>
 	<link rel="stylesheet" href="css/Shumi_Ramen.css" />
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,9 +31,7 @@
 	</div>
 
 	<!--***************** Slide-shows ******************-->
-	<br>
 	<div class="slideshow_container">
-
 		<div class="mySlides fade">
 		  <div class="numbertext">1 / 3</div>
 		  <img src="assets/Information.jpg" style="width:100%">
@@ -58,6 +56,29 @@
 	  <span class="dot"></span> 
 	</div>
 
+	<!--***************** Menu ******************-->
+
+	<button class="accordion">Section 1</button>
+	<div class="panel">
+	    <img class="menu_pictures" src="assets/Ramen/Black_Garlic_Oil_Ramen.jpg">
+	    <p>HI</p>
+
+	    <img class="menu_pictures" src="assets/Ramen/Black_Pepper_Beef.jpg">
+	    <p>HI</p>  
+	</div>
+
+	<button class="accordion">Section 2</button>
+	<div class="panel">
+	    <img class="menu_pictures" src="assets/Ramen/Fried_Chicken_Shoyu_Ramen.jpg">
+	    <p>HI</p>
+	</div>
+
+	<button class="accordion">Section 3</button>
+	<div class="panel">
+	    <img class="menu_pictures" src="assets/Ramen/Kale_Shoyu_Ramen.jpg">
+	    <p>HI</p>  
+	</div>
+
 	
 	<script>
 	//----------------------------------------------------Hamburger-button
@@ -70,11 +91,11 @@
 	    }
 	}
 
-	var slideIndex = 1;
-	showDivs(slideIndex);
+	var slideIndex1 = 1;
+	showDivs(slideIndex1);
 
 	function plusDivs(n) {
-	  showDivs(slideIndex += n);
+	  showDivs(slideIndex1 += n);
 	}
 	</script>
 
@@ -100,5 +121,24 @@
 	    setTimeout(showSlides, 3000); // Change image every 2 seconds
 	}
 	</script>
+
+	<script>
+	//----------------------------------------------------Drop-Down-Menu
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active_button");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  });
+	}
+	</script>
+
 </body>
 </html>
