@@ -184,13 +184,23 @@ img{
   float: left;
   margin: auto;
   width: 50%; 
-  background-color: yellow;
 }
 
 .float-L_pic{
-  float: left;
-  margin: auto;
-  width: 50%;
-  background-color: red;
-  position: static;
+	margin-top: 10px;
+	float: left;
+  	flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .float_L_pic {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
