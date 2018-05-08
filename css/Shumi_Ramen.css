@@ -186,8 +186,8 @@ img{
 }
 
 .float_L_pic{
-    margin-top: 10px;
-    float: left;
+  margin-top: 10px;
+  float: left;
     flex: 49%;
     max-width: 49%;
     padding: 0 4px;
@@ -195,6 +195,7 @@ img{
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
+  
     h2{
       font-size: 18px;
     }
