@@ -21,25 +21,30 @@ header {
 }
 
 h1{
-	font-size: 16px;
-	font-weight: lighter;
-	margin-bottom: 30px;
-	margin-top: -25px;
-	padding: 0;
-	color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+  margin-top: -25px;
+  padding: 0;
+  color: white;
 }
 
 h2{
-  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h3{
+  font-size: 20px;
   font-weight: normal;
 }
 
 /******************Navgation Bar*****************/
 nav{
-	margin: auto;
-	width: 100%;
-	padding: 10px;
-	list-style:none;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  list-style:none;
 }
 img{
   margin-bottom: 15px;
@@ -47,17 +52,17 @@ img{
 
 .topnav {
   overflow: hidden;
- 	background-color: #781214;
- 	display: inline-block;
- 	float: left;
+  background-color: #781214;
+  display: inline-block;
+  float: left;
 }
 
 .topnav a {
-	text-align: center;
+  text-align: center;
   color: #f2f2f2;
-	padding: 25px 50px;
-	text-decoration: none;
-	font-size: 18px;
+  padding: 25px 50px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .topnav a:hover {
@@ -66,7 +71,7 @@ img{
 }
 
 .logo {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .topnav .icon {
@@ -174,17 +179,18 @@ img{
     transition: max-height 0.2s ease-out;
 }
 
-.float-L{
+.float_L{
   float: left;
   margin: auto;
   width: 50%; 
 }
 
-.float-L_pic{
-	margin-top: 10px;
-	float: left;
-  	flex: 50%;
+.float_L_pic{
+  margin-top: 10px;
+  float: left;
+    flex: 50%;
     max-width: 50%;
+    max-height: 25%;
     padding: 0 4px;
 }
 
@@ -194,7 +200,15 @@ img{
         flex: 50%;
         max-width: 50%;
     }
+    h2{
+      font-size: 18px;
+    }
+
+    h3{
+      font-size: 12px;
+    }
+
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
