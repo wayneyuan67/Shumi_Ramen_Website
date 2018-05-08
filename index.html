@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Index_Shumi_Ramen</title>
-	<link rel="stylesheet" href="css/Shumi_Ramen.css" />
+	<title>Shumi Ramen</title>
+	<link rel="stylesheet" href="css/shumi_ramen_website.css" />
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -58,26 +58,76 @@
 
 	<!--***************** Menu ******************-->
 
-	<div class="accordion">Section 1</div>
-	<div class="panel">
-	    <img class="menu_pictures" src="assets/Ramen/Black_Garlic_Oil_Ramen.jpg">
-	    <p>HI</p>
+	<div class="accordion">Appetizer</div>
+		<div class="panel">
 
-	    <img class="menu_pictures" src="assets/Ramen/Black_Pepper_Beef.jpg">
-	    <p>HI</p>  
-	</div>
+			<div class="float-L">
+	          <h2>Karaage</h2>
+	        </div>
 
-	<button class="accordion">Section 2</button>
-	<div class="panel">
-	    <img class="menu_pictures" src="assets/Ramen/Fried_Chicken_Shoyu_Ramen.jpg">
-	    <p>HI</p>
-	</div>
+	        <div class="float-L_pic">
+	          <img class="menu_pics" src="assets/Appetizer/Karaage.jpg" >
+	        </div>
+	          
+	        <div class="float-L">
+	          <h2>Takoyaki</h2>
+	        </div>
 
-	<button class="accordion">Section 3</button>
-	<div class="panel">
-	    <img class="menu_pictures" src="assets/Ramen/Kale_Shoyu_Ramen.jpg">
-	    <p>HI</p>  
-	</div>
+	        <div class="float-L_pic">
+	          <img class="menu_pics" src="assets/Appetizer/Takoyaki.jpg" width="500" height="250">
+	        </div>
+
+	        <div class="float-L">
+	          <h2>Croquette</h2>
+	        </div>
+
+	        <div class="float-L_pic">
+	          <img class="menu_pics" src="dog.jpg" width="500" height="250">
+	        </div>
+
+
+          
+      </div>
+
+    <div class="accordion">Ramen</div>
+        <div class="panel">
+
+          <div class="float-L">
+            <h2>sndfowief</h2>
+          </div>  
+
+
+          <div class="float-L">
+            <img class="menu_pics" src="dog2.jpg" width="500" height="250">
+          </div>
+
+           <div class="float-L">
+            <h2>sndfowief</h2>
+          </div>  
+
+
+          <div class="float-L">
+            <img class="menu_pics" src="dog2.jpg" width="500" height="250">
+          </div>
+
+    </div>
+
+    <div class="accordion">Dessert</div>
+      <div class="panel">
+
+      	  <div class="float-L">
+            <h2>sndfowief</h2>
+          </div>  
+
+          <div class="float-L">
+            <img class="menu_pics" src="dog2.jpg" width="500" height="250">
+          </div>
+
+
+    </div>
+
+
+
 
 	
 	<script>
@@ -90,10 +140,8 @@
 	        x.className = "topnav";
 	    }
 	}
-
 	var slideIndex1 = 1;
 	showDivs(slideIndex1);
-
 	function plusDivs(n) {
 	  showDivs(slideIndex1 += n);
 	}
@@ -103,7 +151,6 @@
 	//----------------------------------------------------Slide-Show
 	var slideIndex = 0;
 	showSlides();
-
 	function showSlides() {
 	    var i;
 	    var slides = document.getElementsByClassName("mySlides");
@@ -126,7 +173,6 @@
 	//----------------------------------------------------Drop-Down-Menu
 	var acc = document.getElementsByClassName("accordion");
 	var i;
-
 	for (i = 0; i < acc.length; i++) {
 	  acc[i].addEventListener("click", function() {
 	    this.classList.toggle("active_button");
@@ -142,3 +188,4 @@
 
 </body>
 </html>
+
