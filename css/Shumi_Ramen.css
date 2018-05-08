@@ -186,20 +186,15 @@ img{
 }
 
 .float_L_pic{
-  margin-top: 10px;
-  float: left;
-    flex: 50%;
-    max-width: 50%;
-    max-height: 25%;
+    margin-top: 10px;
+    float: left;
+    flex: 49%;
+    max-width: 49%;
     padding: 0 4px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-    .float_L_pic {
-        flex: 50%;
-        max-width: 50%;
-    }
     h2{
       font-size: 18px;
     }
