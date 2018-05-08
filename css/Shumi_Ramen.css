@@ -174,12 +174,6 @@ img{
     transition: max-height 0.2s ease-out;
 }
 
-.menu_pics{
-  display:block;
-  margin-left: auto;
-  margin-top: 15px;
-}
-
 .float-L{
   float: left;
   margin: auto;
