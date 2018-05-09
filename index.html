@@ -11,8 +11,10 @@
 		<img class="logo" src="assets/Shumi_Ramen_Logo.png" alt="Shumi Ramen Logo" height="200" width="200">
 
 		<h1>low salt, lean meat</h1>
-
+	</header>
 	<!--***************** Nav Bar ******************-->
+
+	<div class="nav_container">
 		<nav class="topnav" id="myTopnav"> 
 			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		  	<a class="active" href="#home">Home</a>
@@ -20,12 +22,13 @@
 		  	<a class="active" href="#contact">Our Story</a>
 		 	 <a class="active" href="#about">Contact</a>
 		</nav>
-	</header>
+	</div>
+	
 
 	<!--***************** Ramen icon & Quote ******************-->
 	<div class="ramen_icon">
+		<img src="assets/Ramen_Icon.jpg" alt="Ramen Icon" height="50" width="50">
 		<h2 class="icon_text">
-			<img src="assets/Ramen_Icon.jpg" alt="Ramen Icon" height="50" width="50">
 			“Man shall not live by bread alone…”
 		</h2>
 	</div>
@@ -319,6 +322,16 @@
 	}
 	</script>
 
+	<!--script>**********************************************(Scroll)
+		$(document).ready("scroll",function(){
+			if($(document).scrollTop()>200){
+				$("div").removeClass("nav_container").addClass("nav_container_expand")
+			}else{
+				$("div").removeClass("nav_container_expand").addClass("nav_container")
+			}
+			});
+	</script-->
+
 	<script>
 	//----------------------------------------------------Slide-Show
 	var slideIndex = 0;
@@ -357,6 +370,7 @@
 	  });
 	}
 	</script>
+
 
 </body>
 </html>
