@@ -33,11 +33,19 @@ h1{
 h2{
   font-size: 30px;
   font-weight: normal;
+  color: white;
+  background-color: black;
+  width: 80%;
+  text-indent: 10px;
 }
 
 h3{
-  font-size: 20px;
+  font-size: 15px;
   font-weight: normal;
+}
+
+li{
+  font-size: 15px;
 }
 
 /******************Navgation Bar*****************/
@@ -70,35 +78,35 @@ nav{
 }
 
 img{
-  	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .topnav {
-  	overflow: hidden;
-  	background-color: #781214;
-  	display: inline-block;
-	z-index: 100;
+  overflow: hidden;
+  background-color: #781214;
+  display: inline-block;
+  z-index: 100;
 }
 
 .topnav a {
-	text-align: center;
-	color: #f2f2f2;
-	padding: 25px 50px;
-	text-decoration: none;
-	font-size: 18px;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 25px 50px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .topnav a:hover {
-	background-color: white;
-	color: black;
+  background-color: white;
+  color: black;
 }
 
 .logo {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .topnav .icon {
-	display: none;
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -197,7 +205,7 @@ img{
 }
 
 .panel {
-  	margin: auto;
+  	margin: 0 auto;
     width: 80%;
     padding: 0 18px;
     max-height: 0;
@@ -207,11 +215,12 @@ img{
 
 .float_L{
   float: left;
-  margin: auto;
+  margin: 0 auto;
   width: 50%; 
 }
 
 .float_L_pic{
+  margin: auto;
   margin-top: 10px;
   float: left;
     flex: 49%;
@@ -221,14 +230,37 @@ img{
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-  
+    .float_L{
+      width: 100%;
+      text-align: center;
+  }
+
+    .float_L_pic{
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    h2{
+       margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 1200px){
     h2{
       font-size: 18px;
+      margin-top: 2%;
     }
 
     h3{
-      font-size: 12px;
+      font-size: 13px;
     }
+
+    li{
+      font-size: 13px;
+    }
+
 
 }
 
