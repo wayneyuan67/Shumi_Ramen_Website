@@ -173,14 +173,6 @@ img{
   margin: auto;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-}
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
