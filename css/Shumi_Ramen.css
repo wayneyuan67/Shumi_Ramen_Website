@@ -238,6 +238,7 @@ img{
 /****************---Our Story and Contact---****************/
 .container{
   margin: auto;
+  margin-top: 2%;
   padding-bottom: 50px;
   width: 80%;
 }
@@ -257,7 +258,6 @@ img{
 .google_Map h3{
   line-height: 1.5;
   margin: auto;
-  margin-bottom: 2%;
 }
 
 
